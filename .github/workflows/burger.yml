@@ -1,0 +1,37 @@
+name: Burger Time
+
+on:
+  push: # Trigger on every push event
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Grind the Meat (simulated)
+        run: echo "‍ Grinding delicious virtual beef..."
+        env:
+          MEAT_TYPE: ground_chuck
+
+      - name: Mix in Ingredients (simulated)
+        run: echo "  Adding egg and seasonings..."
+
+      - name: Form Patties (simulated)
+        run: echo " Shaping perfect patties..."
+
+      - name: Preheat Grill (simulated)
+        run: echo "  Heating up the grill..."
+
+      - name: Cook Burgers (simulated)
+        run: echo "  Sizzling to juicy perfection..."
+
+      - name: Toast Buns (simulated)
+        run: echo "  Getting those buns golden brown..."
+
+      - name: Assemble Burger (simulated)
+        run: echo "  Building a burger masterpiece..."
+
+      - name: Devour Burger (simulated)
+        run: echo "  Burger time! (don't forget to clean up)"
