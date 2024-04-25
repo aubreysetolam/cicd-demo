@@ -1,4 +1,4 @@
-name: Burger Time
+name: Create Burger
 
 on:
   push: # Trigger on every push event
