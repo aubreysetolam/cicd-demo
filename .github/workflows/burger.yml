@@ -4,7 +4,7 @@ on:
   push: # Trigger on every push event
 
 jobs:
-  build:
+  prepare_patty:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -21,6 +21,8 @@ jobs:
       - name: Form Patties (simulated)
         run: echo " Shaping perfect patties..."
 
+    prepare_others:
+    
       - name: Preheat Grill (simulated)
         run: echo "  Heating up the grill..."
 
