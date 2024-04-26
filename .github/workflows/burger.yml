@@ -21,19 +21,21 @@ jobs:
       - name: Form Patties (simulated)
         run: echo " Shaping perfect patties..."
 
-    prepare_others:
-    
-      - name: Preheat Grill (simulated)
-        run: echo "  Heating up the grill..."
+  prepare_others:
+       runs-on: ubuntu-latest
+       steps:
 
-      - name: Cook Burgers (simulated)
-        run: echo "  Sizzling to juicy perfection..."
-
-      - name: Toast Buns (simulated)
-        run: echo "  Getting those buns golden brown..."
-
-      - name: Assemble Burger (simulated)
-        run: echo "  Building a burger masterpiece..."
-
-      - name: Devour Burger (simulated)
-        run: echo "  Burger time! (don't forget to clean up)"
+        - name: Preheat Grill (simulated)
+          run: echo "  Heating up the grill..."
+  
+        - name: Cook Burgers (simulated)
+          run: echo "  Sizzling to juicy perfection..."
+  
+        - name: Toast Buns (simulated)
+          run: echo "  Getting those buns golden brown..."
+  
+        - name: Assemble Burger (simulated)
+          run: echo "  Building a burger masterpiece..."
+  
+        - name: Devour Burger (simulated)
+          run: echo "  Burger time! (don't forget to clean up)"
