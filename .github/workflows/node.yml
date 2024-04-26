@@ -1,8 +1,7 @@
 name: Node.js CI/CD
 
 on:
-  push: # Trigger on push events to master branch
-    branches: [ master ]
+  push: 
 
 jobs:
   lint:  # Job to run code linting
